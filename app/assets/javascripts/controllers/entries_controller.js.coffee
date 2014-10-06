@@ -12,4 +12,4 @@ Raffler.EntriesController = Ember.ArrayController.extend
       entry = pool[Math.floor(Math.random()*pool.length)]
       entry.set('winner', true)
       entry.set('highlight', true)
-      @get('store').commit()
+      entry.save()

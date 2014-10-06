@@ -14,7 +14,7 @@ class EntriesController < ApplicationController
   end
 
   def update
-    respond_with Entry.update(parms[:id], entry_params)
+    respond_with Entry.update(params[:id], entry_params)
   end
 
   def destroy

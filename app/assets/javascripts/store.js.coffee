@@ -10,3 +10,7 @@ Raffler.Store = DS.Store.extend({
 Raffler.ApplicationAdapter = DS.ActiveModelAdapter.extend({
 
 })
+
+inflector = Ember.Inflector.inflector
+inflector.irregular('entry', 'entries')
+inflector.uncountable('advice')
